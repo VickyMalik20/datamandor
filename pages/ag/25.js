@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTable, useSortBy, usePagination, useGlobalFilter } from 'react-table';
-import { supabase } from '../../lib/supabaseClient'; // Import koneksi Supabase
+import { supabase } from '../../lib/supabaseClient';// Import koneksi Supabase
 
 // Fungsi untuk Global Filter (Pencarian)
 function GlobalFilter({ globalFilter, setGlobalFilter }) {
