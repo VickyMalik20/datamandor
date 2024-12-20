@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/* Dropdown Animation */
+/* Awal kondisi dropdown tertutup */
+/* Kondisi awal dropdown tersembunyi */
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: hidden; /* Menggunakan visibility untuk menyembunyikan elemen */
+  pointer-events: none; /* Menonaktifkan interaksi dengan dropdown */
+}
+
+/* Kondisi dropdown saat terbuka */
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible; /* Membuat dropdown terlihat */
+  pointer-events: auto; /* Mengaktifkan interaksi dengan dropdown */
+}
+
+/* Animasi masuk */
+.dropdown-menu.animate-dropdown {
+  animation: dropdownSlideIn 0.3s ease forwards;
+}
+
+/* Animasi keluar */
+.dropdown-menu.animate-dropdown-exit {
+  animation: dropdownSlideOut 0.3s ease forwards;
+}
+
+/* Keyframes untuk animasi masuk */
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes untuk animasi keluar */
+@keyframes dropdownSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
