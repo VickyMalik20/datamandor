@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Memasukkan CSS Bootstrap
+import Link from 'next/link'
 
 export default function Menu() {
     useEffect(() => {
@@ -52,7 +53,7 @@ export default function Menu() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a href="/" className="navbar-brand">UD Sinar Mandiri</a>
+                <Link href="/" className="navbar-brand">UD Sinar Mandiri</Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -67,7 +68,7 @@ export default function Menu() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a href="/" className="nav-link">Home</a>
+                            <Link href="/" className="nav-link">Home</Link>
                         </li>
 
                         <li className="nav-item dropdown">
@@ -87,10 +88,10 @@ export default function Menu() {
                                 aria-labelledby="berasDropdown"
                             >
                                 <li>
-                                    <a href="/beraspolos/beras-a" className="dropdown-item">Beras A</a>
+                                    <Link href="/beraspolos/beras-a" className="dropdown-item">Beras A</Link>
                                 </li>
                                 <li>
-                                    <a href="/beraspolos/beras-b" className="dropdown-item">Beras B</a>
+                                    <Link href="/beraspolos/beras-b" className="dropdown-item">Beras B</Link>
                                 </li>
                             </ul>
                         </li>
@@ -112,13 +113,13 @@ export default function Menu() {
                                 aria-labelledby="bsDropdown"
                             >
                                 <li>
-                                    <a href="/bs/5" className="dropdown-item">5 KG</a>
+                                    <Link href="/bs/5" className="dropdown-item">5 KG</Link>
                                 </li>
                                 <li>
-                                    <a href="/bs/10" className="dropdown-item">10 KG</a>
+                                    <Link href="/bs/10" className="dropdown-item">10 KG</Link>
                                 </li>
                                 <li>
-                                    <a href="/bs/25" className="dropdown-item">25 KG</a>
+                                    <Link href="/bs/25" className="dropdown-item">25 KG</Link>
                                 </li>
                             </ul>
                         </li>
@@ -140,10 +141,10 @@ export default function Menu() {
                                 aria-labelledby="agDropdown"
                             >
                                 <li>
-                                    <a href="/ag/5" className="dropdown-item">5 KG</a>
+                                    <Link href="/ag/5" className="dropdown-item">5 KG</Link>
                                 </li>
                                 <li>
-                                    <a href="/ag/25" className="dropdown-item">25 KG</a>
+                                    <Link href="/ag/25" className="dropdown-item">25 KG</Link>
                                 </li>
                             </ul>
                         </li>
@@ -164,27 +165,27 @@ export default function Menu() {
                                 aria-labelledby="rjDropdown"
                             >
                                 <li>
-                                    <a href="/riject/menir" className="dropdown-item">Menir</a>
+                                    <Link href="/riject/menir" className="dropdown-item">Menir</Link>
                                 </li>
                                 <li>
-                                    <a href="/riject/beras" className="dropdown-item">Beras</a>
+                                    <Link href="/riject/beras" className="dropdown-item">Beras</Link>
                                 </li>
                             </ul>
                         </li>
 
                         <li className="nav-item">
-                            <a href="/menir/menir" className="nav-link">Menir</a>
+                            <Link href="/menir/menir" className="nav-link">Menir</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="/broken/broken" className="nav-link">Broken</a>
+                            <Link href="/broken/broken" className="nav-link">Broken</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="/bronir/bronir" className="nav-link">Bronir</a>
+                            <Link href="/bronir/bronir" className="nav-link">Bronir</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="/about" className="nav-link">About</a>
+                            <Link href="/about" className="nav-link">About</Link>
                         </li>
                     </ul>
                 </div>
